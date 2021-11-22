@@ -1,0 +1,27 @@
++) Bridge Pattern là một trong những Pattern thuộc nhóm Structural Pattern. Ý tưởng của nó là tách tính trừu tượng (abstraction) ra khỏi tính hiện thực (implementation) của nó. Từ đó có thể dễ dàng chỉnh sửa hoặc thay thế mà không làm ảnh hưởng đến những nơi có sử dụng lớp ban đầu -> cả hai bộ phận có thể thay đổi độc lập nhau.
+
+Ưu điểm: 
+- Giảm sự phụ thuộc giữa abstraction và implementation.
+- Giảm số lượng những lớp con không cần thiết
+- Code gọn gàng, dễ bảo trì, mở rộng về sau
+- Cho phép ẩn các chi tiết implement từ 
+Nhược điểm
+- Có thể làm tăng độ phức tạp khi áp dụng cho một lớp có tính gắn kết cao
+=> https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Bridge
+
++) Builder pattern: Tách rời việc xây dựng (construction) một đối tượng phức tạp khỏi biểu diễn của nó sao cho cùng một tiến trình xây dựng có thể tạo được các biểu diễn khác nhau.
+=> https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Builder
+
++) Chain_of_responsibility: hắc phục việc ghép cặp giữa bộ gởi và bộ nhận thông điệp. Các đối tượng nhận thông điệp được kết nối thành một chuỗi và thông điệp được chuyển dọc theo chuỗi nầy đến khi gặp được đối tượng xử lý nó. Tránh việc gắn kết cứng giữa phần tử gởi request với phần tử nhận và xử lý request bằng cách cho phép hơn 1 đối tượng có có cơ hội xử lý request. Liên kết các đối tượng nhận request thành 1 dây chuyền rồi gửi request xuyên qua từng đối tượng xử lý đến khi gặp đối tượng xử lý cụ thể.
+=> https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Chain%20of%20Resposibility
+
++) Command Pattern thuộc nhóm các pattern hành vi: Mỗi yêu cầu (thực hiện một thao tác nào đó) được bao bọc thành một đối tượng. Các yêu cầu sẽ được lưu trữ và gởi đi như các đối tượng.Đóng gói request vào trong một Object, nhờ đó có thể nthông số hoá chương trình nhận request và thực hiện các thao tác trên request: sắp xếp, log, undo…
+==> https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Command-Pattern
+
+Composite Pattern là một mẫu thiết kế thuộc nhóm Structural Pattern: Tổ chức các đối tượng theo cấu trúc phân cấp dạng cây. Tất cả các đối tượng trong cấu trúc được thao tác theo một cách thuần nhất như nhau.
+Tạo quan hệ thứ bậc bao gộp giữa các đối tượng. Client có thể xem đối tượng bao gộp và bị bao gộp như nhau -> khả năng tổng quát hoá trong code của client -> dễ phát triển, nâng cấp, bảo trì.
+==> https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Composite
+
++) Decorator Pattern: Gán thêm trách nhiệm cho đối tượng (mở rộng chức năng) vào lúc chạy (dynamically) mà không làm thay đổi cấu trúc lớp của nó.
+Decorator này nằm trong nhóm mẫu thiết kế mang tính cấu trúc (Structural pattern) bởi vì nó thể hiện như là đóng gói của một lớp đã tồn tại.
+==> https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Decorator-Pattern
