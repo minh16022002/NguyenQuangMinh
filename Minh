@@ -1,0 +1,30 @@
+Repo: https://github.com/aritraroy/PatternLockView?fbclid=IwAR2Pg4eIPS8W2NUxNkU0bnueW8uWCbMEjOYuYU90euGqcMmc1WsAi7St5bU
+- Abstract Factory: là phương pháp tạo ra một Super-factory dùng để tạo ra các Factory khác. Hay còn được gọi là Factory của các Factory.
+
++ package com.andrognito.rxpatternlockview.events
+	abstract class BasePatternLockEvent
+		-> extends: class PatternLockCompleteEvent
+		-> extends: class PatternLockCompoundEvent
+		-> extends: class PatternLockProgressEvent
+
++ package com.andrognito.rxpatternlockview.observables
+	abstract class BasePatternLockViewObservable
+		-> extends: class PatternLockViewCompleteObservable
+		-> extends: class PatternLockViewCompoundObservable
+		-> extends: class PatternLockViewProgressObservable
+
+- Singleton: đảm bảo chỉ duy nhất một thể hiện (instance) được tạo ra và nó sẽ cung cấp cho bạn một method để có thể truy xuất được thể hiện duy nhất đó mọi lúc mọi nơi trong chương trình.
+
+package com.andrognito.patternlockview.utils;
+class PatternLockUtils
+
+class RandomUtils
+
+class ResourceUtils
+
+- Adapter: các inteface (giao diện) không liên quan tới nhau có thể làm việc cùng nhau.
+
+	abstract class BasePatternLockViewObservable extends: io.reactivex.Observable
+		-> extends: class PatternLockViewCompleteObservable
+		-> extends: class PatternLockViewCompoundObservable
+		-> extends: class PatternLockViewProgressObservable
