@@ -1,0 +1,17 @@
+Prototype pattern là một trong những Creational pattern. Nó cho phép sao chép các đối tượng hiện có mà không làm cho mã của bạn phụ thuộc vào các lớp của chúng.
+=> https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Prototype
+
+Proxy Pattern là một Structural Pattern cung cấp một đối tượng đóng vai trò thay thế cho một đối tượng dịch vụ thực được khách hàng sử dụng. Một proxy nhận các yêu cầu của khách hàng, thực hiện một số công việc (kiểm soát truy cập, bộ nhớ đệm, v.v.) và sau đó chuyển yêu cầu đến một đối tượng dịch vụ.
+=> https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Proxy
+
+State Pattern là một trong những mẫu thiết kế thuộc nhóm Behavioral Pattern cho phép một đối tượng thay đổi hành vi khi trạng thái bên trong của nó thay đổi.
+=> https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/State
+
+Strategy pattern (mẫu chiến lược): cho phép bạn xác định một nhóm thuật toán, đặt mỗi thuật toán vào một lớp riêng biệt và làm cho các đối tượng của chúng có thể hoán đổi cho nhau.
+=> https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Strategy-Pattern
+
+Template Method Pattern là một trong những Pattern thuộc nhóm Behavior Pattern. Nó xác định khung của một thuật toán trong lớp cha nhưng cho phép lớp con ghi đè các bước cụ thể của thuật toán mà không thay đổi cấu trúc của nó.
+=> https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Template-Pattern
+
+Visitor là mẩu thiết kế thuộc Behavioral pattern, cho phép bạn tách các thuật toán khỏi các đối tượng mà chúng hoạt động trên đó.
+=> https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Visitor
