@@ -73,9 +73,7 @@ class PatternLockViewProgressObservable
 
 Việc tạo ra những Super-factory này dùng để tạo ra các Factory tiếp theo rất giống với mẫu thiết kế Abstract Factory.
 
-``
 Trong Abstract Factory pattern, một interface có nhiệm vụ tạo ra một Factory của các object có liên quan tới nhau mà không cần phải chỉ ra trực tiếp các class của object. Mỗi Factory được tạo ra có thể tạo ra các object bằng phương pháp giống như Factory pattern.
-``
 
 
 #### 2.1.2 Singleton:
@@ -88,24 +86,24 @@ Trong Abstract Factory pattern, một interface có nhiệm vụ tạo ra một 
 
 Các lớp dưới đây đều chỉ có một thể hiện và chỉ cung cấp một method có thể truy xuất được thể hiện duy nhất đó
 
-``PatternLockUtils``
 ```Java
+class PatternLockUtils
 private PatternLockUtils() {
         throw new AssertionError("You can not instantiate this class. Use its static utility " +
                 "methods instead");
     }
 ```
 
-``RandomUtils``
 ```Java
+class RandomUtils
 private RandomUtils() {
         throw new AssertionError("You can not instantiate this class. Use its static utility " +
                 "methods instead");
     }
 ```
 
-``ResourceUtils``
 ```Java
+class ResourceUtils
 private ResourceUtils() {
         throw new AssertionError("You can not instantiate this class. Use its static utility " +
                 "methods instead");
